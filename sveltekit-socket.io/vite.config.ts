@@ -26,8 +26,5 @@ export default defineConfig({
 				appendFileSync('build/index.js', `\nglobalThis.setupServer?.(server.server);\n`, 'utf8');
 			}
 		}
-	],
-	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}']
-	}
+	]
 });
